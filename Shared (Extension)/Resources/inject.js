@@ -1,39 +1,41 @@
  (function() {
-   if (window.__reelsFixPagePatched) {
-     console.log('[ReelsFix] Page context already patched, skipping');
-     return;
-   }
-   window.__reelsFixPagePatched = true;
-   
-   console.log('[ReelsFix] Injected script running in page context');
-   
-   const observer = new MutationObserver((mutations) => {
-     for (const mutation of mutations) {
-       for (const node of mutation.addedNodes) {
-         if (node.nodeName === 'VIDEO') patchVideo(node);
-         if (node.querySelectorAll) node.querySelectorAll('video').forEach(patchVideo);
-       }
+     if (window.__reelsFixPagePatched) {
+         console.log('[ReelsFix] Page context already patched, skipping');
+         return;
      }
-   });
-
-   function patchVideo(video) {
-     if (video._mutedPatched) return;
-     video._mutedPatched = true;
-     console.log('[ReelsFix] Patching video:', video);
+     window.__reelsFixPagePatched = true;
      
-     // Actually unmute it first, before we override the property
-     video.muted = false;
+     console.log('[ReelsFix] Injected script running in page context');
      
-     Object.defineProperty(video, 'muted', {
-       set(v) {
-         console.log('[ReelsFix] Mute blocked:', v);
-         // Don't set it
-       },
-       get() { return false; },
-       configurable: true
+     const patchedVideos = new WeakSet();
+     
+     const observer = new MutationObserver((mutations) => {
+         for (const mutation of mutations) {
+             for (const node of mutation.addedNodes) {
+                 if (node.nodeName === 'VIDEO') patchVideo(node);
+                 if (node.querySelectorAll) node.querySelectorAll('video').forEach(patchVideo);
+             }
+         }
      });
-   }
-
-   document.querySelectorAll('video').forEach(patchVideo);
-   observer.observe(document.body, { childList: true, subtree: true });
+     
+     function patchVideo(video) {
+         if (patchedVideos.has(video)) return;
+         patchedVideos.add(video);
+         console.log('[ReelsFix] Patching video:', video);
+         
+         // Actually unmute it first, before we override the property
+         video.muted = false;
+         
+         Object.defineProperty(video, 'muted', {
+             set(v) {
+                 console.log('[ReelsFix] Mute blocked:', v);
+                 // Don't set it
+             },
+             get() { return false; },
+             configurable: true
+         });
+     }
+     
+     document.querySelectorAll('video').forEach(patchVideo);
+     observer.observe(document.body, { childList: true, subtree: true });
  })();

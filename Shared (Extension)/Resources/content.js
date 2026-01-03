@@ -48,6 +48,7 @@ const modifyInstagramUI = () => {
         };
         document.documentElement.appendChild(script);
         
+        const setupVideos = new WeakSet();
         let currentVolume = 1.0;
         
         // Load saved volume on startup
@@ -84,8 +85,8 @@ const modifyInstagramUI = () => {
         }
         
         function setupVideo(video) {
-            if (video._reelsFixSetup) return;
-            video._reelsFixSetup = true;
+            if (setupVideos.has(video)) return;
+            setupVideos.add(video);
             
             video.controls = true;
             
