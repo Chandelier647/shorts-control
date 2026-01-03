@@ -50,6 +50,7 @@ const modifyInstagramUI = () => {
         
         const setupVideos = new WeakSet();
         let currentVolume = 1.0;
+        let saveTimeout;
         
         // Load saved volume on startup
         browser.storage.local.get('reelVolume').then((result) => {
@@ -97,7 +98,7 @@ const modifyInstagramUI = () => {
             setTimeout(() => { video.volume = currentVolume; }, 0);
             setTimeout(() => { video.volume = currentVolume; }, 100);
             
-            let saveTimeout;
+            
             
             video.addEventListener('volumechange', () => {
                 if (!document.contains(video)) return;
