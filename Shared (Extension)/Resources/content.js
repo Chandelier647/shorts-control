@@ -356,7 +356,25 @@ const isOnScreen = (el) => {
 };
 
 window.onload = () => {
-    setInterval(modifyInstagramUI, 500);
-    setInterval(modifyFacebookUI, 500);
-    setInterval(modifyYoutubeUI, 500);
+    // initial exec
+    modifyInstagramUI();
+    modifyFacebookUI();
+    modifyYoutubeUI();
+    
+    let debounceTimeout;
+    const uiObserver = new MutationObserver(() => {
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(() => {
+            modifyInstagramUI();
+            modifyFacebookUI();
+            modifyYoutubeUI();
+        }, 100);
+    });
+    
+    uiObserver.observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        attributeFilter: ['style','class']
+    });
 };
