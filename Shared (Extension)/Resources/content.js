@@ -84,35 +84,40 @@ const modifyInstagramUI = () => {
         }
         
         function setupVideo(video) {
-          if (video._reelsFixSetup) return;
-          video._reelsFixSetup = true;
-
-          video.controls = true;
-          
-          // Set immediately
-          video.volume = currentVolume;
-          
-          // Set again after Instagram's initialization likely completes
-          setTimeout(() => { video.volume = currentVolume; }, 0);
-          setTimeout(() => { video.volume = currentVolume; }, 100);
-
-          video.addEventListener('volumechange', () => {
-            if (!document.contains(video)) return;
-            if (video.volume === currentVolume) return;
+            if (video._reelsFixSetup) return;
+            video._reelsFixSetup = true;
             
-            // Ignore suspicious resets to 1 from non-visible videos
-            if (video.volume === 1 && !isInViewport(video)) {
-              console.log('[ReelsFix] Ignoring suspicious volume reset, re-applying correct volume');
-              video.volume = currentVolume;  // Fight back!
-              return;
-            }
+            video.controls = true;
             
-            currentVolume = video.volume;
-            browser.storage.local.set({ reelVolume: currentVolume });
-            console.log('[ReelsFix] Volume saved:', currentVolume);
+            // Set immediately
+            video.volume = currentVolume;
             
-            updateNearbyVideos(video);
-          });
+            // Set again after Instagram's initialization likely completes
+            setTimeout(() => { video.volume = currentVolume; }, 0);
+            setTimeout(() => { video.volume = currentVolume; }, 100);
+            
+            let saveTimeout;
+            
+            video.addEventListener('volumechange', () => {
+                if (!document.contains(video)) return;
+                if (video.volume === currentVolume) return;
+                
+                // Ignore suspicious resets to 1 from non-visible videos
+                if (video.volume === 1 && !isInViewport(video)) {
+                    video.volume = currentVolume;  // Fight back!
+                    return;
+                }
+                
+                currentVolume = video.volume;
+                updateNearbyVideos(video);
+                
+                // debounce writes - oh yea optimization time baby
+                clearTimeout(saveTimeout);
+                saveTimeout = setTimeout(() => {
+                    browser.storage.local.set({ reelVolume: currentVolume });
+                    console.log('[ReelsFix] Volume saved:', currentVolume);
+                }, 300);
+            });
         }
         
         document.querySelectorAll('video').forEach(setupVideo);
