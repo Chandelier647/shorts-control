@@ -37,7 +37,7 @@
     },
 
     "content_scripts": [{
-        "js": [ "content.js","instagramMutePrevent.js" ],
+        "js": [ "content.js"],
         "matches": [ "*://www.instagram.com/*","*://www.facebook.com/*","*://www.youtube.com/*" ],
         "run_at": "document_start"
     }],
