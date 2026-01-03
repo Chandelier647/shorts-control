@@ -42,10 +42,10 @@ const modifyInstagramUI = () => {
         // Inject the mute-blocking script
         const script = document.createElement('script');
         script.src = browser.runtime.getURL('inject.js');
-        script.onload = () => {
+        script.addEventListener('load', () => {
             console.log('[ReelsFix] inject.js loaded successfully');
             script.remove();
-        };
+        }, { once: true };
         document.documentElement.appendChild(script);
         
         const setupVideos = new WeakSet();
@@ -355,11 +355,27 @@ const isOnScreen = (el) => {
             );
 };
 
+const hostname = window.location.hostname;
+const isInstagram = hostname.includes("instagram.com");
+const isFacebook = hostname.includes("facebook.com");
+const isYoutube = hostname.includes("youtube.com");
+
 window.onload = () => {
     // initial exec
-    modifyInstagramUI();
-    modifyFacebookUI();
-    modifyYoutubeUI();
+    if (isInstagram) {
+        
+        
+        modifyInstagramUI();
+    }
+    
+    if (isFacebook) {
+        modifyFacebookUI();
+    }
+    
+    if (isYoutube) {
+        modifyYoutubeUI();
+    }
+    
     
     let debounceTimeout;
     const uiObserver = new MutationObserver(() => {
