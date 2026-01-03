@@ -1,10 +1,27 @@
 {
     "manifest_version": 3,
+    "web_accessible_resources": [
+        {
+          "resources": ["inject.js"],
+          "matches": ["*://*.instagram.com/*"]
+        }
+      ],
     "default_locale": "en",
 
     "name": "__MSG_extension_name__",
     "description": "__MSG_extension_description__",
     "version": "1.0",
+    
+    "developer": {
+        "name": "Chandelier 647",
+        "url": "https://chandelier647.com"
+    },
+    
+    "host_permissions": [
+        "https://www.instagram.com/*",
+        "https://www.youtube.com/*",
+        "https://www.facebook.com/*"
+    ],
 
     "icons": {
         "48": "images/icon-48.png",
@@ -15,13 +32,14 @@
     },
 
     "background": {
-        "scripts": [ "background.js" ],
-        "type": "module"
+        "service_worker": [ "background.js" ],
+        "type": "classic"
     },
 
     "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "js": [ "content.js","instagramMutePrevent.js" ],
+        "matches": [ "*://www.instagram.com/*","*://www.facebook.com/*","*://www.youtube.com/*" ],
+        "run_at": "document_start"
     }],
 
     "action": {
@@ -29,5 +47,5 @@
         "default_icon": "images/toolbar-icon.svg"
     },
 
-    "permissions": [ ]
+    "permissions": ["scripting", "storage", "nativeMessaging"]
 }
