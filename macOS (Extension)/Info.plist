@@ -5,9 +5,52 @@
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.Safari.web-extension</string>
+		<string>com.apple.Safari.extension</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).SafariWebExtensionHandler</string>
+		<string>$(PRODUCT_MODULE_NAME).SafariExtensionHandler</string>
+		<key>SFSafariContentScript</key>
+		<array>
+			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://www.instagram.com/*</string>
+				</array>
+				<key>Script</key>
+				<string>content.js</string>
+			</dict>
+			<dict>
+				<key>Allowed URL Patterns</key>
+				<array>
+					<string>https://www.instagram.com*</string>
+				</array>
+				<key>Script</key>
+				<string>inject.js</string>
+			</dict>
+		</array>
+		<key>SFSafariToolbarItem</key>
+		<dict>
+			<key>Action</key>
+			<string>Command</string>
+			<key>Identifier</key>
+			<string>Button</string>
+			<key>Image</key>
+			<string>ToolbarItemIcon.pdf</string>
+			<key>Label</key>
+			<string>Your Button</string>
+		</dict>
+		<key>SFSafariWebsiteAccess</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>www.instagram.com</string>
+				<string>www.facebook.com</string>
+				<string>www.youtube.com</string>
+			</array>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
 	</dict>
+	<key>NSHumanReadableDescription</key>
+	<string>This is shorts-control Extension. You should tell us what your extension does here.</string>
 </dict>
 </plist>

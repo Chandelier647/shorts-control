@@ -7,46 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		788DF7812F09285000AD55F8 /* shorts-control Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 788DF7802F09285000AD55F8 /* shorts-control Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		788DF78B2F09285000AD55F8 /* shorts-control Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 788DF78A2F09285000AD55F8 /* shorts-control Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		784D94032F09B6F800C0A758 /* macOS (Extension).appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 784D94022F09B6F800C0A758 /* macOS (Extension).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		784D945C2F09BB5B00C0A758 /* iOS (Extension).appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 784D945B2F09BB5B00C0A758 /* iOS (Extension).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		784D94BD2F09C16E00C0A758 /* macOS (Extension).appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 784D94022F09B6F800C0A758 /* macOS (Extension).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		788DF7822F09285000AD55F8 /* PBXContainerItemProxy */ = {
+		784D94042F09B6F800C0A758 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 788DF7472F09284F00AD55F8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 788DF77F2F09285000AD55F8;
-			remoteInfo = "shorts-control Extension (iOS)";
+			remoteGlobalIDString = 784D94012F09B6F800C0A758;
+			remoteInfo = "shorts-control Extension";
 		};
-		788DF78C2F09285000AD55F8 /* PBXContainerItemProxy */ = {
+		784D945D2F09BB5B00C0A758 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 788DF7472F09284F00AD55F8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 788DF7892F09285000AD55F8;
-			remoteInfo = "shorts-control Extension (macOS)";
+			remoteGlobalIDString = 784D945A2F09BB5B00C0A758;
+			remoteInfo = "shorts-control Extension";
+		};
+		784D94BE2F09C16E00C0A758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 788DF7472F09284F00AD55F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 784D94012F09B6F800C0A758;
+			remoteInfo = "macOS (Extension)";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		788DF7B32F09285000AD55F8 /* Embed Foundation Extensions */ = {
+		784D94182F09B6F800C0A758 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				788DF7812F09285000AD55F8 /* shorts-control Extension.appex in Embed Foundation Extensions */,
+				784D94032F09B6F800C0A758 /* macOS (Extension).appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF7BD2F09285000AD55F8 /* Embed Foundation Extensions */ = {
+		784D947A2F09BB5B00C0A758 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				788DF78B2F09285000AD55F8 /* shorts-control Extension.appex in Embed Foundation Extensions */,
+				784D945C2F09BB5B00C0A758 /* iOS (Extension).appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784D94B82F09C11C00C0A758 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				784D94BD2F09C16E00C0A758 /* macOS (Extension).appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,107 +73,64 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		788DF7632F09285000AD55F8 /* shorts-control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shorts-control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		788DF7752F09285000AD55F8 /* shorts-control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shorts-control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		788DF7802F09285000AD55F8 /* shorts-control Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "shorts-control Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		788DF78A2F09285000AD55F8 /* shorts-control Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "shorts-control Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		784D93D32F09B6F700C0A758 /* macOS (App).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macOS (App).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		784D94022F09B6F800C0A758 /* macOS (Extension).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "macOS (Extension).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		784D94292F09BB5A00C0A758 /* iOS (App).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS (App).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		784D945B2F09BB5B00C0A758 /* iOS (Extension).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS (Extension).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		784D94892F09C11B00C0A758 /* shorts-controlbackup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shorts-controlbackup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		784D94A22F09C11C00C0A758 /* shorts-controlbackup Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "shorts-controlbackup Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		788DF7AE2F09285000AD55F8 /* Exceptions for "Shared (App)" folder in "shorts-control (iOS)" target */ = {
+		784D94222F09B73200C0A758 /* Exceptions for "macOS (Extension)" folder in "macOS (Extension)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: Resources/Main.html",
-				Assets.xcassets,
-				Resources/Icon.png,
-				Resources/Script.js,
-				Resources/Style.css,
-				ViewController.swift,
+				"/Localized: SafariExtensionViewController.xib",
+				SafariExtensionHandler.swift,
+				SafariExtensionViewController.swift,
 			);
-			target = 788DF7622F09285000AD55F8 /* shorts-control (iOS) */;
+			target = 784D94012F09B6F800C0A758 /* macOS (Extension) */;
 		};
-		788DF7B22F09285000AD55F8 /* Exceptions for "iOS (Extension)" folder in "shorts-control Extension (iOS)" target */ = {
+		784D94B42F09C11C00C0A758 /* Exceptions for "shorts-controlbackup Extension" folder in "shorts-controlbackup Extension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 788DF77F2F09285000AD55F8 /* shorts-control Extension (iOS) */;
+			target = 784D94A12F09C11C00C0A758 /* shorts-controlbackup Extension */;
 		};
-		788DF7B72F09285000AD55F8 /* Exceptions for "iOS (App)" folder in "shorts-control (iOS)" target */ = {
+		784D94C12F09C53400C0A758 /* Exceptions for "Shared (Extension)" folder in "macOS (Extension)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
-			);
-			target = 788DF7622F09285000AD55F8 /* shorts-control (iOS) */;
-		};
-		788DF7B82F09285000AD55F8 /* Exceptions for "Shared (App)" folder in "shorts-control (macOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"/Localized: Resources/Main.html",
-				Assets.xcassets,
-				Resources/Icon.png,
-				Resources/Script.js,
-				Resources/Style.css,
-				ViewController.swift,
-			);
-			target = 788DF7742F09285000AD55F8 /* shorts-control (macOS) */;
-		};
-		788DF7BC2F09285000AD55F8 /* Exceptions for "macOS (Extension)" folder in "shorts-control Extension (macOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 788DF7892F09285000AD55F8 /* shorts-control Extension (macOS) */;
-		};
-		788DF7C12F09285000AD55F8 /* Exceptions for "Shared (Extension)" folder in "shorts-control Extension (iOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Resources/_locales,
-				Resources/background.js,
 				Resources/content.js,
-				Resources/images,
 				Resources/inject.js,
-				Resources/manifest.json,
-				Resources/popup.css,
-				Resources/popup.html,
-				Resources/popup.js,
-				SafariWebExtensionHandler.swift,
 			);
-			target = 788DF77F2F09285000AD55F8 /* shorts-control Extension (iOS) */;
-		};
-		788DF7C22F09285000AD55F8 /* Exceptions for "Shared (Extension)" folder in "shorts-control Extension (macOS)" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Resources/_locales,
-				Resources/background.js,
-				Resources/content.js,
-				Resources/images,
-				Resources/inject.js,
-				Resources/manifest.json,
-				Resources/popup.css,
-				Resources/popup.html,
-				Resources/popup.js,
-				SafariWebExtensionHandler.swift,
-			);
-			target = 788DF7892F09285000AD55F8 /* shorts-control Extension (macOS) */;
+			target = 784D94012F09B6F800C0A758 /* macOS (Extension) */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		788DF74B2F09284F00AD55F8 /* Shared (App) */ = {
+		784D948A2F09C11B00C0A758 /* shorts-controlbackup */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "shorts-controlbackup";
+			sourceTree = "<group>";
+		};
+		784D94A62F09C11C00C0A758 /* shorts-controlbackup Extension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				788DF7AE2F09285000AD55F8 /* Exceptions for "Shared (App)" folder in "shorts-control (iOS)" target */,
-				788DF7B82F09285000AD55F8 /* Exceptions for "Shared (App)" folder in "shorts-control (macOS)" target */,
+				784D94B42F09C11C00C0A758 /* Exceptions for "shorts-controlbackup Extension" folder in "shorts-controlbackup Extension" target */,
 			);
+			path = "shorts-controlbackup Extension";
+			sourceTree = "<group>";
+		};
+		788DF74B2F09284F00AD55F8 /* Shared (App) */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Shared (App)";
 			sourceTree = "<group>";
 		};
 		788DF7542F09285000AD55F8 /* Shared (Extension) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				788DF7C12F09285000AD55F8 /* Exceptions for "Shared (Extension)" folder in "shorts-control Extension (iOS)" target */,
-				788DF7C22F09285000AD55F8 /* Exceptions for "Shared (Extension)" folder in "shorts-control Extension (macOS)" target */,
+				784D94C12F09C53400C0A758 /* Exceptions for "Shared (Extension)" folder in "macOS (Extension)" target */,
 			);
 			explicitFolders = (
 				Resources/_locales,
@@ -165,9 +141,6 @@
 		};
 		788DF7652F09285000AD55F8 /* iOS (App) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				788DF7B72F09285000AD55F8 /* Exceptions for "iOS (App)" folder in "shorts-control (iOS)" target */,
-			);
 			path = "iOS (App)";
 			sourceTree = "<group>";
 		};
@@ -178,16 +151,13 @@
 		};
 		788DF7842F09285000AD55F8 /* iOS (Extension) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				788DF7B22F09285000AD55F8 /* Exceptions for "iOS (Extension)" folder in "shorts-control Extension (iOS)" target */,
-			);
 			path = "iOS (Extension)";
 			sourceTree = "<group>";
 		};
 		788DF78E2F09285000AD55F8 /* macOS (Extension) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				788DF7BC2F09285000AD55F8 /* Exceptions for "macOS (Extension)" folder in "shorts-control Extension (macOS)" target */,
+				784D94222F09B73200C0A758 /* Exceptions for "macOS (Extension)" folder in "macOS (Extension)" target */,
 			);
 			path = "macOS (Extension)";
 			sourceTree = "<group>";
@@ -195,28 +165,42 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		788DF7602F09285000AD55F8 /* Frameworks */ = {
+		784D93D02F09B6F700C0A758 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF7722F09285000AD55F8 /* Frameworks */ = {
+		784D93FF2F09B6F800C0A758 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF77D2F09285000AD55F8 /* Frameworks */ = {
+		784D94262F09BB5A00C0A758 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF7872F09285000AD55F8 /* Frameworks */ = {
+		784D94582F09BB5B00C0A758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784D94862F09C11B00C0A758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784D949F2F09C11C00C0A758 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,6 +210,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		784D94BC2F09C16E00C0A758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		788DF7462F09284F00AD55F8 = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +226,9 @@
 				788DF7762F09285000AD55F8 /* macOS (App) */,
 				788DF7842F09285000AD55F8 /* iOS (Extension) */,
 				788DF78E2F09285000AD55F8 /* macOS (Extension) */,
+				784D948A2F09C11B00C0A758 /* shorts-controlbackup */,
+				784D94A62F09C11C00C0A758 /* shorts-controlbackup Extension */,
+				784D94BC2F09C16E00C0A758 /* Frameworks */,
 				788DF7642F09285000AD55F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -242,10 +236,12 @@
 		788DF7642F09285000AD55F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				788DF7632F09285000AD55F8 /* shorts-control.app */,
-				788DF7752F09285000AD55F8 /* shorts-control.app */,
-				788DF7802F09285000AD55F8 /* shorts-control Extension.appex */,
-				788DF78A2F09285000AD55F8 /* shorts-control Extension.appex */,
+				784D93D32F09B6F700C0A758 /* macOS (App).app */,
+				784D94022F09B6F800C0A758 /* macOS (Extension).appex */,
+				784D94292F09BB5A00C0A758 /* iOS (App).app */,
+				784D945B2F09BB5B00C0A758 /* iOS (Extension).appex */,
+				784D94892F09C11B00C0A758 /* shorts-controlbackup.app */,
+				784D94A22F09C11C00C0A758 /* shorts-controlbackup Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -253,96 +249,130 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		788DF7622F09285000AD55F8 /* shorts-control (iOS) */ = {
+		784D93D22F09B6F700C0A758 /* macOS (App) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 788DF7B42F09285000AD55F8 /* Build configuration list for PBXNativeTarget "shorts-control (iOS)" */;
+			buildConfigurationList = 784D94192F09B6F800C0A758 /* Build configuration list for PBXNativeTarget "macOS (App)" */;
 			buildPhases = (
-				788DF75F2F09285000AD55F8 /* Sources */,
-				788DF7602F09285000AD55F8 /* Frameworks */,
-				788DF7612F09285000AD55F8 /* Resources */,
-				788DF7B32F09285000AD55F8 /* Embed Foundation Extensions */,
+				784D93CF2F09B6F700C0A758 /* Sources */,
+				784D93D02F09B6F700C0A758 /* Frameworks */,
+				784D93D12F09B6F700C0A758 /* Resources */,
+				784D94182F09B6F800C0A758 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				788DF7832F09285000AD55F8 /* PBXTargetDependency */,
+				784D94052F09B6F800C0A758 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				788DF7652F09285000AD55F8 /* iOS (App) */,
-			);
-			name = "shorts-control (iOS)";
+			name = "macOS (App)";
 			packageProductDependencies = (
 			);
-			productName = "shorts-control (iOS)";
-			productReference = 788DF7632F09285000AD55F8 /* shorts-control.app */;
+			productName = "shorts-control";
+			productReference = 784D93D32F09B6F700C0A758 /* macOS (App).app */;
 			productType = "com.apple.product-type.application";
 		};
-		788DF7742F09285000AD55F8 /* shorts-control (macOS) */ = {
+		784D94012F09B6F800C0A758 /* macOS (Extension) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 788DF7BE2F09285000AD55F8 /* Build configuration list for PBXNativeTarget "shorts-control (macOS)" */;
+			buildConfigurationList = 784D94152F09B6F800C0A758 /* Build configuration list for PBXNativeTarget "macOS (Extension)" */;
 			buildPhases = (
-				788DF7712F09285000AD55F8 /* Sources */,
-				788DF7722F09285000AD55F8 /* Frameworks */,
-				788DF7732F09285000AD55F8 /* Resources */,
-				788DF7BD2F09285000AD55F8 /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				788DF78D2F09285000AD55F8 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				788DF7762F09285000AD55F8 /* macOS (App) */,
-			);
-			name = "shorts-control (macOS)";
-			packageProductDependencies = (
-			);
-			productName = "shorts-control (macOS)";
-			productReference = 788DF7752F09285000AD55F8 /* shorts-control.app */;
-			productType = "com.apple.product-type.application";
-		};
-		788DF77F2F09285000AD55F8 /* shorts-control Extension (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 788DF7AF2F09285000AD55F8 /* Build configuration list for PBXNativeTarget "shorts-control Extension (iOS)" */;
-			buildPhases = (
-				788DF77C2F09285000AD55F8 /* Sources */,
-				788DF77D2F09285000AD55F8 /* Frameworks */,
-				788DF77E2F09285000AD55F8 /* Resources */,
+				784D93FE2F09B6F800C0A758 /* Sources */,
+				784D93FF2F09B6F800C0A758 /* Frameworks */,
+				784D94002F09B6F800C0A758 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				788DF7842F09285000AD55F8 /* iOS (Extension) */,
-			);
-			name = "shorts-control Extension (iOS)";
+			name = "macOS (Extension)";
 			packageProductDependencies = (
 			);
-			productName = "shorts-control Extension (iOS)";
-			productReference = 788DF7802F09285000AD55F8 /* shorts-control Extension.appex */;
+			productName = "shorts-control Extension";
+			productReference = 784D94022F09B6F800C0A758 /* macOS (Extension).appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		788DF7892F09285000AD55F8 /* shorts-control Extension (macOS) */ = {
+		784D94282F09BB5A00C0A758 /* iOS (App) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 788DF7B92F09285000AD55F8 /* Build configuration list for PBXNativeTarget "shorts-control Extension (macOS)" */;
+			buildConfigurationList = 784D947B2F09BB5B00C0A758 /* Build configuration list for PBXNativeTarget "iOS (App)" */;
 			buildPhases = (
-				788DF7862F09285000AD55F8 /* Sources */,
-				788DF7872F09285000AD55F8 /* Frameworks */,
-				788DF7882F09285000AD55F8 /* Resources */,
+				784D94252F09BB5A00C0A758 /* Sources */,
+				784D94262F09BB5A00C0A758 /* Frameworks */,
+				784D94272F09BB5A00C0A758 /* Resources */,
+				784D947A2F09BB5B00C0A758 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				784D945E2F09BB5B00C0A758 /* PBXTargetDependency */,
+			);
+			name = "iOS (App)";
+			packageProductDependencies = (
+			);
+			productName = "shorts-control";
+			productReference = 784D94292F09BB5A00C0A758 /* iOS (App).app */;
+			productType = "com.apple.product-type.application";
+		};
+		784D945A2F09BB5B00C0A758 /* iOS (Extension) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784D94762F09BB5B00C0A758 /* Build configuration list for PBXNativeTarget "iOS (Extension)" */;
+			buildPhases = (
+				784D94572F09BB5B00C0A758 /* Sources */,
+				784D94582F09BB5B00C0A758 /* Frameworks */,
+				784D94592F09BB5B00C0A758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS (Extension)";
+			packageProductDependencies = (
+			);
+			productName = "shorts-control Extension";
+			productReference = 784D945B2F09BB5B00C0A758 /* iOS (Extension).appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		784D94882F09C11B00C0A758 /* shorts-controlbackup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784D94B92F09C11C00C0A758 /* Build configuration list for PBXNativeTarget "shorts-controlbackup" */;
+			buildPhases = (
+				784D94852F09C11B00C0A758 /* Sources */,
+				784D94862F09C11B00C0A758 /* Frameworks */,
+				784D94872F09C11B00C0A758 /* Resources */,
+				784D94B82F09C11C00C0A758 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				784D94BF2F09C16E00C0A758 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				784D948A2F09C11B00C0A758 /* shorts-controlbackup */,
+			);
+			name = "shorts-controlbackup";
+			packageProductDependencies = (
+			);
+			productName = "shorts-controlbackup";
+			productReference = 784D94892F09C11B00C0A758 /* shorts-controlbackup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		784D94A12F09C11C00C0A758 /* shorts-controlbackup Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784D94B52F09C11C00C0A758 /* Build configuration list for PBXNativeTarget "shorts-controlbackup Extension" */;
+			buildPhases = (
+				784D949E2F09C11C00C0A758 /* Sources */,
+				784D949F2F09C11C00C0A758 /* Frameworks */,
+				784D94A02F09C11C00C0A758 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				788DF78E2F09285000AD55F8 /* macOS (Extension) */,
+				784D94A62F09C11C00C0A758 /* shorts-controlbackup Extension */,
 			);
-			name = "shorts-control Extension (macOS)";
+			name = "shorts-controlbackup Extension";
 			packageProductDependencies = (
 			);
-			productName = "shorts-control Extension (macOS)";
-			productReference = 788DF78A2F09285000AD55F8 /* shorts-control Extension.appex */;
+			productName = "shorts-controlbackup Extension";
+			productReference = 784D94A22F09C11C00C0A758 /* shorts-controlbackup Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -355,16 +385,22 @@
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					788DF7622F09285000AD55F8 = {
+					784D93D22F09B6F700C0A758 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
-					788DF7742F09285000AD55F8 = {
+					784D94012F09B6F800C0A758 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
-					788DF77F2F09285000AD55F8 = {
+					784D94282F09BB5A00C0A758 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
-					788DF7892F09285000AD55F8 = {
+					784D945A2F09BB5B00C0A758 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					784D94882F09C11B00C0A758 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					784D94A12F09C11C00C0A758 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -383,37 +419,53 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				788DF7622F09285000AD55F8 /* shorts-control (iOS) */,
-				788DF7742F09285000AD55F8 /* shorts-control (macOS) */,
-				788DF77F2F09285000AD55F8 /* shorts-control Extension (iOS) */,
-				788DF7892F09285000AD55F8 /* shorts-control Extension (macOS) */,
+				784D93D22F09B6F700C0A758 /* macOS (App) */,
+				784D94012F09B6F800C0A758 /* macOS (Extension) */,
+				784D94282F09BB5A00C0A758 /* iOS (App) */,
+				784D945A2F09BB5B00C0A758 /* iOS (Extension) */,
+				784D94882F09C11B00C0A758 /* shorts-controlbackup */,
+				784D94A12F09C11C00C0A758 /* shorts-controlbackup Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		788DF7612F09285000AD55F8 /* Resources */ = {
+		784D93D12F09B6F700C0A758 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF7732F09285000AD55F8 /* Resources */ = {
+		784D94002F09B6F800C0A758 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF77E2F09285000AD55F8 /* Resources */ = {
+		784D94272F09BB5A00C0A758 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF7882F09285000AD55F8 /* Resources */ = {
+		784D94592F09BB5B00C0A758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784D94872F09C11B00C0A758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784D94A02F09C11C00C0A758 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -423,28 +475,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		788DF75F2F09285000AD55F8 /* Sources */ = {
+		784D93CF2F09B6F700C0A758 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF7712F09285000AD55F8 /* Sources */ = {
+		784D93FE2F09B6F800C0A758 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF77C2F09285000AD55F8 /* Sources */ = {
+		784D94252F09BB5A00C0A758 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		788DF7862F09285000AD55F8 /* Sources */ = {
+		784D94572F09BB5B00C0A758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784D94852F09C11B00C0A758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		784D949E2F09C11C00C0A758 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -454,172 +520,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		788DF7832F09285000AD55F8 /* PBXTargetDependency */ = {
+		784D94052F09B6F800C0A758 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 788DF77F2F09285000AD55F8 /* shorts-control Extension (iOS) */;
-			targetProxy = 788DF7822F09285000AD55F8 /* PBXContainerItemProxy */;
+			target = 784D94012F09B6F800C0A758 /* macOS (Extension) */;
+			targetProxy = 784D94042F09B6F800C0A758 /* PBXContainerItemProxy */;
 		};
-		788DF78D2F09285000AD55F8 /* PBXTargetDependency */ = {
+		784D945E2F09BB5B00C0A758 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 788DF7892F09285000AD55F8 /* shorts-control Extension (macOS) */;
-			targetProxy = 788DF78C2F09285000AD55F8 /* PBXContainerItemProxy */;
+			target = 784D945A2F09BB5B00C0A758 /* iOS (Extension) */;
+			targetProxy = 784D945D2F09BB5B00C0A758 /* PBXContainerItemProxy */;
+		};
+		784D94BF2F09C16E00C0A758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 784D94012F09B6F800C0A758 /* macOS (Extension) */;
+			targetProxy = 784D94BE2F09C16E00C0A758 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		788DF7B02F09285000AD55F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y8DWE63H8E;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control.Extension";
-				PRODUCT_NAME = "shorts-control Extension";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		788DF7B12F09285000AD55F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y8DWE63H8E;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control.Extension";
-				PRODUCT_NAME = "shorts-control Extension";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		788DF7B52F09285000AD55F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y8DWE63H8E;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
-				PRODUCT_NAME = "shorts-control";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		788DF7B62F09285000AD55F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y8DWE63H8E;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
-				PRODUCT_NAME = "shorts-control";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		788DF7BA2F09285000AD55F8 /* Debug */ = {
+		784D94162F09B6F800C0A758 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -630,21 +549,21 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control.Extension";
-				PRODUCT_NAME = "shorts-control Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -655,7 +574,7 @@
 			};
 			name = Debug;
 		};
-		788DF7BB2F09285000AD55F8 /* Release */ = {
+		784D94172F09B6F800C0A758 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -666,21 +585,21 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control.Extension";
-				PRODUCT_NAME = "shorts-control Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -691,13 +610,13 @@
 			};
 			name = Release;
 		};
-		788DF7BF2F09285000AD55F8 /* Debug */ = {
+		784D941A2F09B6F800C0A758 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8DWE63H8E;
 				ENABLE_APP_SANDBOX = YES;
@@ -706,13 +625,14 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -721,7 +641,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
-				PRODUCT_NAME = "shorts-control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -733,13 +653,13 @@
 			};
 			name = Debug;
 		};
-		788DF7C02F09285000AD55F8 /* Release */ = {
+		784D941B2F09B6F800C0A758 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8DWE63H8E;
 				ENABLE_APP_SANDBOX = YES;
@@ -748,13 +668,14 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -763,7 +684,321 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
-				PRODUCT_NAME = "shorts-control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		784D94772F09BB5B00C0A758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8DWE63H8E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "shorts-control Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		784D94782F09BB5B00C0A758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8DWE63H8E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "shorts-control Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		784D947C2F09BB5B00C0A758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8DWE63H8E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		784D947D2F09BB5B00C0A758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8DWE63H8E;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		784D94B62F09C11C00C0A758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8DWE63H8E;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "shorts-controlbackup Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-controlbackup Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-controlbackup.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		784D94B72F09C11C00C0A758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8DWE63H8E;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "shorts-controlbackup Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-controlbackup Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-controlbackup.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		784D94BA2F09C11C00C0A758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8DWE63H8E;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		784D94BB2F09C11C00C0A758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y8DWE63H8E;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -894,47 +1129,65 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		784D94152F09B6F800C0A758 /* Build configuration list for PBXNativeTarget "macOS (Extension)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784D94162F09B6F800C0A758 /* Debug */,
+				784D94172F09B6F800C0A758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784D94192F09B6F800C0A758 /* Build configuration list for PBXNativeTarget "macOS (App)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784D941A2F09B6F800C0A758 /* Debug */,
+				784D941B2F09B6F800C0A758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784D94762F09BB5B00C0A758 /* Build configuration list for PBXNativeTarget "iOS (Extension)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784D94772F09BB5B00C0A758 /* Debug */,
+				784D94782F09BB5B00C0A758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784D947B2F09BB5B00C0A758 /* Build configuration list for PBXNativeTarget "iOS (App)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784D947C2F09BB5B00C0A758 /* Debug */,
+				784D947D2F09BB5B00C0A758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784D94B52F09C11C00C0A758 /* Build configuration list for PBXNativeTarget "shorts-controlbackup Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784D94B62F09C11C00C0A758 /* Debug */,
+				784D94B72F09C11C00C0A758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784D94B92F09C11C00C0A758 /* Build configuration list for PBXNativeTarget "shorts-controlbackup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784D94BA2F09C11C00C0A758 /* Debug */,
+				784D94BB2F09C11C00C0A758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		788DF74A2F09284F00AD55F8 /* Build configuration list for PBXProject "shorts-control" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				788DF7C32F09285000AD55F8 /* Debug */,
 				788DF7C42F09285000AD55F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		788DF7AF2F09285000AD55F8 /* Build configuration list for PBXNativeTarget "shorts-control Extension (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				788DF7B02F09285000AD55F8 /* Debug */,
-				788DF7B12F09285000AD55F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		788DF7B42F09285000AD55F8 /* Build configuration list for PBXNativeTarget "shorts-control (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				788DF7B52F09285000AD55F8 /* Debug */,
-				788DF7B62F09285000AD55F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		788DF7B92F09285000AD55F8 /* Build configuration list for PBXNativeTarget "shorts-control Extension (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				788DF7BA2F09285000AD55F8 /* Debug */,
-				788DF7BB2F09285000AD55F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		788DF7BE2F09285000AD55F8 /* Build configuration list for PBXNativeTarget "shorts-control (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				788DF7BF2F09285000AD55F8 /* Debug */,
-				788DF7C02F09285000AD55F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

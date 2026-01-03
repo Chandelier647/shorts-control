@@ -1,3 +1,4 @@
 node_modules/
 eslint.*
 yarn.lock
+Shared (Extension)/Resources/package.json
