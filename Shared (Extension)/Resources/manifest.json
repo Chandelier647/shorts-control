@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "web_accessible_resources": [
         {
-          "resources": ["inject.js"],
+          "resources": ["sites/instagram/inject.js"],
           "matches": ["*://*.instagram.com/*"]
         }
       ],
@@ -32,15 +32,25 @@
     },
 
     "background": {
-        "service_worker": [ "background.js" ],
-        "type": "classic"
+        "service_worker": "background.js"
     },
 
     "content_scripts": [{
-        "js": [ "content.js"],
-        "matches": [ "*://www.instagram.com/*","*://www.facebook.com/*","*://www.youtube.com/*" ],
+        "js": [ "shared.js", "sites/instagram/content.js"],
+        "matches": [ "*://www.instagram.com/*" ],
         "run_at": "document_start"
-    }],
+    },
+        {
+            "js": [ "shared.js", "sites/youtube/content.js"],
+            "matches": [ "*://www.youtube.com/*" ],
+            "run_at": "document_start"
+        },
+        {
+            "js": [ "shared.js", "sites/facebook/content.js"],
+            "matches": [ "*://www.facebook.com/*" ],
+            "run_at": "document_start"
+        },
+    ],
 
     "action": {
         "default_popup": "popup.html",

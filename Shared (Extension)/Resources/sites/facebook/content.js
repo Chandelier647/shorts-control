@@ -1,3 +1,11 @@
+//
+//  content.js
+//  shorts-control
+//
+//  Created by Phillip Bosek on 2026-01-03.
+//
+
+
 const modifyFacebookUI = () => {
     chrome.storage.sync.get(["facebook", "facebook-autounmute"], (settings) => {
         const {facebook, 'facebook-autounmute': autoUnmute} = settings;

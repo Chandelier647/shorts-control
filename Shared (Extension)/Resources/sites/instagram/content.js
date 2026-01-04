@@ -1,3 +1,11 @@
+//
+//  content.js
+//  shorts-control
+//
+//  Created by Phillip Bosek on 2026-01-03.
+//
+
+
 const modifyInstagramUI = () => {
     //chrome.storage.sync.get("instagram", ({ instagram }) => {
     //console.log("overallVolume", overallVolume);
