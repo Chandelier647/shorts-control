@@ -1,10 +1,3 @@
-//
-//  SafariWebExtensionHandler.swift
-//  Shared (Extension)
-//
-//  Created by Phillip Bosek on 2026-01-03.
-//
-
 import SafariServices
 import os.log
 
@@ -19,24 +12,43 @@ class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         } else {
             profile = request?.userInfo?["profile"] as? UUID
         }
-
-        let message: Any?
+        
+        let message: [String: Any]?
         if #available(iOS 15.0, macOS 11.0, *) {
-            message = request?.userInfo?[SFExtensionMessageKey]
+            message = request?.userInfo?[SFExtensionMessageKey] as? [String: Any]
         } else {
-            message = request?.userInfo?["message"]
+            
+            message = request?.userInfo?["message"] as? [String: Any]
+            os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@ (profile: %@)", String(describing: message), profile?.uuidString ?? "none")
         }
 
-        os_log(.default, "Received message from browser.runtime.sendNativeMessage: %@ (profile: %@)", String(describing: message), profile?.uuidString ?? "none")
+        guard let message = message, let action = message["action"] as? String else {
+            context.completeRequest(returningItems: nil, completionHandler: nil)
+            return
+        }
+
+        var responseData: [String: Any] = [:]
+
+        switch action {
+        case "getConfig":
+            #if DEBUG
+            responseData["isDebug"] = true
+            #else
+            responseData["isDebug"] = false
+            #endif
+            responseData["version"] = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "unknown"
+            
+        default:
+            responseData["error"] = "Unknown action"
+        }
 
         let response = NSExtensionItem()
         if #available(iOS 15.0, macOS 11.0, *) {
-            response.userInfo = [ SFExtensionMessageKey: [ "echo": message ] ]
+            response.userInfo = [SFExtensionMessageKey: responseData]
         } else {
-            response.userInfo = [ "message": [ "echo": message ] ]
+            response.userInfo = ["message": responseData]
         }
 
-        context.completeRequest(returningItems: [ response ], completionHandler: nil)
+        context.completeRequest(returningItems: [response], completionHandler: nil)
     }
-
 }

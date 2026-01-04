@@ -59,8 +59,15 @@ class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMess
 #endif
     }
 
+    func forceMessageButton() {
+        
+    }
+    
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
 #if os(macOS)
+        
+        
+        
         if (message.body as! String != "open-preferences") {
             return
         }
