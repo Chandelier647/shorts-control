@@ -1,0 +1,11 @@
+{
+    "eslint.debug": true,
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [
+        "Shared (Extension)/Resources"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.lintTask.enable": true
+}

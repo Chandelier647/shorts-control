@@ -1,0 +1,16 @@
+$(SRCROOT)/Shared (Extension)/Resources/node_modules/esbuild/lib/main.js
+$(SRCROOT)/Shared (Extension)/Resources/node_modules/@esbuild/darwin-arm64/package.json
+$(SRCROOT)/Shared (Extension)/Resources/node_modules/@esbuild/darwin-arm64/bin/esbuild
+$(SRCROOT)/Shared (Extension)/Resources/node_modules/*
+$(SRCROOT)/Shared (Extension)/Resources/node_modules/esbuild/package.json
+$(SRCROOT)/Shared (Extension)/Resources/package.json
+$(SRCROOT)/Shared (Extension)/Resources/build.js    
+$(SRCROOT)/Shared (Extension)/Resources/src/background.js
+$(SRCROOT)/Shared (Extension)/Resources/src/shared/index.js
+$(SRCROOT)/Shared (Extension)/Resources/src/shared/native.js
+$(SRCROOT)/Shared (Extension)/Resources/src/shared/storage.js
+$(SRCROOT)/Shared (Extension)/Resources/src/shared/utils.js
+$(SRCROOT)/Shared (Extension)/Resources/src/sites/facebook/content.js
+$(SRCROOT)/Shared (Extension)/Resources/src/sites/instagram/content.js
+$(SRCROOT)/Shared (Extension)/Resources/src/sites/instagram/inject.js
+$(SRCROOT)/Shared (Extension)/Resources/src/sites/youtube/content.js

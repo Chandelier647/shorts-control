@@ -1,0 +1,5 @@
+$(SRCROOT)/Shared (Extension)/Resources/dist/instagram.js
+$(SRCROOT)/Shared (Extension)/Resources/dist/youtube.js
+$(SRCROOT)/Shared (Extension)/Resources/dist/facebook.js
+$(SRCROOT)/Shared (Extension)/Resources/dist/background.js
+$(SRCROOT)/Shared (Extension)/Resources/dist/instagram-inject.js

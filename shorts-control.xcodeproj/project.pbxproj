@@ -9,33 +9,22 @@
 /* Begin PBXBuildFile section */
 		784D94032F09B6F800C0A758 /* macOS (Extension).appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 784D94022F09B6F800C0A758 /* macOS (Extension).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		784D945C2F09BB5B00C0A758 /* iOS (Extension).appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 784D945B2F09BB5B00C0A758 /* iOS (Extension).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		784D94BD2F09C16E00C0A758 /* macOS (Extension).appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 784D94022F09B6F800C0A758 /* macOS (Extension).appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		784DA5A52F09F21300C0A758 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DA5A32F09F21300C0A758 /* SafariWebExtensionHandler.swift */; };
-		784DA5A62F09F21300C0A758 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5952F09F21300C0A758 /* _locales */; };
-		784DA5A72F09F21300C0A758 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5962F09F21300C0A758 /* background.js */; };
-		784DA5A82F09F21300C0A758 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5972F09F21300C0A758 /* content.js */; };
 		784DA5A92F09F21300C0A758 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5992F09F21300C0A758 /* images */; };
-		784DA5AA2F09F21300C0A758 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59A2F09F21300C0A758 /* inject.js */; };
 		784DA5AB2F09F21300C0A758 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59B2F09F21300C0A758 /* manifest.json */; };
 		784DA5AC2F09F21300C0A758 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59D2F09F21300C0A758 /* popup.css */; };
 		784DA5AD2F09F21300C0A758 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59E2F09F21300C0A758 /* popup.html */; };
 		784DA5AE2F09F21300C0A758 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59F2F09F21300C0A758 /* popup.js */; };
 		784DA5AF2F09F21300C0A758 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DA5A32F09F21300C0A758 /* SafariWebExtensionHandler.swift */; };
 		784DA5B02F09F21300C0A758 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5952F09F21300C0A758 /* _locales */; };
-		784DA5B12F09F21300C0A758 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5962F09F21300C0A758 /* background.js */; };
-		784DA5B22F09F21300C0A758 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5972F09F21300C0A758 /* content.js */; };
 		784DA5B32F09F21300C0A758 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5992F09F21300C0A758 /* images */; };
-		784DA5B42F09F21300C0A758 /* inject.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59A2F09F21300C0A758 /* inject.js */; };
 		784DA5B52F09F21300C0A758 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59B2F09F21300C0A758 /* manifest.json */; };
 		784DA5B62F09F21300C0A758 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59D2F09F21300C0A758 /* popup.css */; };
 		784DA5B72F09F21300C0A758 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59E2F09F21300C0A758 /* popup.html */; };
 		784DA5B82F09F21300C0A758 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA59F2F09F21300C0A758 /* popup.js */; };
-		784DA5BD2F09F29700C0A758 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5BC2F09F29700C0A758 /* content.js */; };
-		784DA5BE2F09F29700C0A758 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5BC2F09F29700C0A758 /* content.js */; };
-		784DA5C12F09F2C200C0A758 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5C02F09F2C200C0A758 /* content.js */; };
-		784DA5C22F09F2C200C0A758 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5C02F09F2C200C0A758 /* content.js */; };
-		784DA5C52F09F2ED00C0A758 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5C42F09F2ED00C0A758 /* content.js */; };
-		784DA5C62F09F2ED00C0A758 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5C42F09F2ED00C0A758 /* content.js */; };
+		784DA6122F0CF49700C0A758 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 784DA5952F09F21300C0A758 /* _locales */; };
+		784DA62F2F0CF51E00C0A758 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 784DA62E2F0CF51E00C0A758 /* dist */; };
+		784DA6302F0CF54800C0A758 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 784DA62E2F0CF51E00C0A758 /* dist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +41,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 784D945A2F09BB5B00C0A758;
 			remoteInfo = "shorts-control Extension";
-		};
-		784D94BE2F09C16E00C0A758 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 788DF7472F09284F00AD55F8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 784D94012F09B6F800C0A758;
-			remoteInfo = "macOS (Extension)";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -85,17 +67,6 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		784D94B82F09C11C00C0A758 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				784D94BD2F09C16E00C0A758 /* macOS (Extension).appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -103,41 +74,27 @@
 		784D94022F09B6F800C0A758 /* macOS (Extension).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "macOS (Extension).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		784D94292F09BB5A00C0A758 /* iOS (App).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS (App).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		784D945B2F09BB5B00C0A758 /* iOS (Extension).appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS (Extension).appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		784D94892F09C11B00C0A758 /* shorts-controlbackup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shorts-controlbackup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		784D94A22F09C11C00C0A758 /* shorts-controlbackup Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "shorts-controlbackup Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		784DA5952F09F21300C0A758 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
-		784DA5962F09F21300C0A758 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		784DA5972F09F21300C0A758 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
 		784DA5992F09F21300C0A758 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
-		784DA59A2F09F21300C0A758 /* inject.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = inject.js; sourceTree = "<group>"; };
 		784DA59B2F09F21300C0A758 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 		784DA59D2F09F21300C0A758 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		784DA59E2F09F21300C0A758 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		784DA59F2F09F21300C0A758 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
-		784DA5A02F09F21300C0A758 /* shared.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = shared.js; sourceTree = "<group>"; };
 		784DA5A32F09F21300C0A758 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		784DA5BC2F09F29700C0A758 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		784DA5C02F09F2C200C0A758 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		784DA5C42F09F2ED00C0A758 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		784DA5F72F0CCC9E00C0A758 /* inputFiles.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = inputFiles.xcfilelist; sourceTree = "<group>"; };
+		784DA5FA2F0CD0C000C0A758 /* outputFiles.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = outputFiles.xcfilelist; sourceTree = "<group>"; };
+		784DA62E2F0CF51E00C0A758 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		784D94B42F09C11C00C0A758 /* Exceptions for "shorts-controlbackup Extension" folder in "shorts-controlbackup Extension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 784D94A12F09C11C00C0A758 /* shorts-controlbackup Extension */;
-		};
 		784D9FE12F09E4BE00C0A758 /* Exceptions for "Shared (App)" folder in "iOS (App)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: Resources/Main.html",
 				Assets.xcassets,
 				Resources/Icon.png,
-				Resources/Script.js,
-				Resources/Style.css,
-				ViewController.swift,
+				Settings.swift,
+				SettingsView.swift,
+				ShortsControlApp.swift,
 			);
 			target = 784D94282F09BB5A00C0A758 /* iOS (App) */;
 		};
@@ -145,53 +102,70 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: LaunchScreen.storyboard",
-				"/Localized: Main.storyboard",
 				AppDelegate.swift,
-				SceneDelegate.swift,
 			);
 			target = 784D94282F09BB5A00C0A758 /* iOS (App) */;
 		};
 		784D9FEB2F09E54B00C0A758 /* Exceptions for "Shared (App)" folder in "macOS (App)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: Resources/Main.html",
 				Assets.xcassets,
 				Resources/Icon.png,
-				Resources/Script.js,
-				Resources/Style.css,
-				ViewController.swift,
+				Settings.swift,
+				SettingsView.swift,
+				ShortsControlApp.swift,
 			);
 			target = 784D93D22F09B6F700C0A758 /* macOS (App) */;
 		};
 		784D9FEC2F09E54B00C0A758 /* Exceptions for "macOS (App)" folder in "macOS (App)" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: Main.storyboard",
 				AppDelegate.swift,
 			);
 			target = 784D93D22F09B6F700C0A758 /* macOS (App) */;
 		};
+		784DA5D02F0A036F00C0A758 /* Exceptions for "Shared (App)" folder in "macOS (Extension)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Settings.swift,
+				SettingsView.swift,
+				ShortsControlApp.swift,
+			);
+			target = 784D94012F09B6F800C0A758 /* macOS (Extension) */;
+		};
+		784DA5D12F0A036F00C0A758 /* Exceptions for "Shared (App)" folder in "iOS (Extension)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Settings.swift,
+				SettingsView.swift,
+				ShortsControlApp.swift,
+			);
+			target = 784D945A2F09BB5B00C0A758 /* iOS (Extension) */;
+		};
+		784DA60D2F0CE7E100C0A758 /* Exceptions for "macOS (App)" folder in "macOS (Extension)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+			);
+			target = 784D94012F09B6F800C0A758 /* macOS (Extension) */;
+		};
+		784DA60F2F0CE7EA00C0A758 /* Exceptions for "iOS (App)" folder in "iOS (Extension)" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppDelegate.swift,
+			);
+			target = 784D945A2F09BB5B00C0A758 /* iOS (Extension) */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		784D948A2F09C11B00C0A758 /* shorts-controlbackup */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "shorts-controlbackup";
-			sourceTree = "<group>";
-		};
-		784D94A62F09C11C00C0A758 /* shorts-controlbackup Extension */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				784D94B42F09C11C00C0A758 /* Exceptions for "shorts-controlbackup Extension" folder in "shorts-controlbackup Extension" target */,
-			);
-			path = "shorts-controlbackup Extension";
-			sourceTree = "<group>";
-		};
 		788DF74B2F09284F00AD55F8 /* Shared (App) */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				784D9FEB2F09E54B00C0A758 /* Exceptions for "Shared (App)" folder in "macOS (App)" target */,
+				784DA5D02F0A036F00C0A758 /* Exceptions for "Shared (App)" folder in "macOS (Extension)" target */,
 				784D9FE12F09E4BE00C0A758 /* Exceptions for "Shared (App)" folder in "iOS (App)" target */,
+				784DA5D12F0A036F00C0A758 /* Exceptions for "Shared (App)" folder in "iOS (Extension)" target */,
 			);
 			path = "Shared (App)";
 			sourceTree = "<group>";
@@ -200,6 +174,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				784D9FE62F09E4E800C0A758 /* Exceptions for "iOS (App)" folder in "iOS (App)" target */,
+				784DA60F2F0CE7EA00C0A758 /* Exceptions for "iOS (App)" folder in "iOS (Extension)" target */,
 			);
 			path = "iOS (App)";
 			sourceTree = "<group>";
@@ -208,6 +183,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				784D9FEC2F09E54B00C0A758 /* Exceptions for "macOS (App)" folder in "macOS (App)" target */,
+				784DA60D2F0CE7E100C0A758 /* Exceptions for "macOS (App)" folder in "macOS (Extension)" target */,
 			);
 			path = "macOS (App)";
 			sourceTree = "<group>";
@@ -253,20 +229,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		784D94862F09C11B00C0A758 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		784D949F2F09C11C00C0A758 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -281,10 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				784DA59B2F09F21300C0A758 /* manifest.json */,
-				784DA5A02F09F21300C0A758 /* shared.js */,
-				784DA5972F09F21300C0A758 /* content.js */,
-				784DA5962F09F21300C0A758 /* background.js */,
-				784DA5BA2F09F27600C0A758 /* sites */,
+				784DA62E2F0CF51E00C0A758 /* dist */,
 				784DA5952F09F21300C0A758 /* _locales */,
 				784DA5C72F09F2FA00C0A758 /* popup */,
 				784DA5992F09F21300C0A758 /* images */,
@@ -295,45 +254,12 @@
 		784DA5A42F09F21300C0A758 /* Shared (Extension) */ = {
 			isa = PBXGroup;
 			children = (
+				784DA5FA2F0CD0C000C0A758 /* outputFiles.xcfilelist */,
+				784DA5F72F0CCC9E00C0A758 /* inputFiles.xcfilelist */,
 				784DA5A22F09F21300C0A758 /* Resources */,
 				784DA5A32F09F21300C0A758 /* SafariWebExtensionHandler.swift */,
 			);
 			path = "Shared (Extension)";
-			sourceTree = "<group>";
-		};
-		784DA5BA2F09F27600C0A758 /* sites */ = {
-			isa = PBXGroup;
-			children = (
-				784DA5BF2F09F2BD00C0A758 /* facebook */,
-				784DA5BB2F09F27D00C0A758 /* instagram */,
-				784DA5C32F09F2E800C0A758 /* youtube */,
-			);
-			path = sites;
-			sourceTree = "<group>";
-		};
-		784DA5BB2F09F27D00C0A758 /* instagram */ = {
-			isa = PBXGroup;
-			children = (
-				784DA5BC2F09F29700C0A758 /* content.js */,
-				784DA59A2F09F21300C0A758 /* inject.js */,
-			);
-			path = instagram;
-			sourceTree = "<group>";
-		};
-		784DA5BF2F09F2BD00C0A758 /* facebook */ = {
-			isa = PBXGroup;
-			children = (
-				784DA5C02F09F2C200C0A758 /* content.js */,
-			);
-			path = facebook;
-			sourceTree = "<group>";
-		};
-		784DA5C32F09F2E800C0A758 /* youtube */ = {
-			isa = PBXGroup;
-			children = (
-				784DA5C42F09F2ED00C0A758 /* content.js */,
-			);
-			path = youtube;
 			sourceTree = "<group>";
 		};
 		784DA5C72F09F2FA00C0A758 /* popup */ = {
@@ -355,8 +281,6 @@
 				788DF7762F09285000AD55F8 /* macOS (App) */,
 				788DF7842F09285000AD55F8 /* iOS (Extension) */,
 				788DF78E2F09285000AD55F8 /* macOS (Extension) */,
-				784D948A2F09C11B00C0A758 /* shorts-controlbackup */,
-				784D94A62F09C11C00C0A758 /* shorts-controlbackup Extension */,
 				784D94BC2F09C16E00C0A758 /* Frameworks */,
 				788DF7642F09285000AD55F8 /* Products */,
 			);
@@ -369,8 +293,6 @@
 				784D94022F09B6F800C0A758 /* macOS (Extension).appex */,
 				784D94292F09BB5A00C0A758 /* iOS (App).app */,
 				784D945B2F09BB5B00C0A758 /* iOS (Extension).appex */,
-				784D94892F09C11B00C0A758 /* shorts-controlbackup.app */,
-				784D94A22F09C11C00C0A758 /* shorts-controlbackup Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -386,6 +308,7 @@
 				784D93D02F09B6F700C0A758 /* Frameworks */,
 				784D93D12F09B6F700C0A758 /* Resources */,
 				784D94182F09B6F800C0A758 /* Embed Foundation Extensions */,
+				784DA6102F0CF1FF00C0A758 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -405,6 +328,7 @@
 			buildPhases = (
 				784D93FE2F09B6F800C0A758 /* Sources */,
 				784D93FF2F09B6F800C0A758 /* Frameworks */,
+				784DA5F52F0C9CDC00C0A758 /* ShellScript */,
 				784D94002F09B6F800C0A758 /* Resources */,
 			);
 			buildRules = (
@@ -458,52 +382,6 @@
 			productReference = 784D945B2F09BB5B00C0A758 /* iOS (Extension).appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		784D94882F09C11B00C0A758 /* shorts-controlbackup */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 784D94B92F09C11C00C0A758 /* Build configuration list for PBXNativeTarget "shorts-controlbackup" */;
-			buildPhases = (
-				784D94852F09C11B00C0A758 /* Sources */,
-				784D94862F09C11B00C0A758 /* Frameworks */,
-				784D94872F09C11B00C0A758 /* Resources */,
-				784D94B82F09C11C00C0A758 /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				784D94BF2F09C16E00C0A758 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				784D948A2F09C11B00C0A758 /* shorts-controlbackup */,
-			);
-			name = "shorts-controlbackup";
-			packageProductDependencies = (
-			);
-			productName = "shorts-controlbackup";
-			productReference = 784D94892F09C11B00C0A758 /* shorts-controlbackup.app */;
-			productType = "com.apple.product-type.application";
-		};
-		784D94A12F09C11C00C0A758 /* shorts-controlbackup Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 784D94B52F09C11C00C0A758 /* Build configuration list for PBXNativeTarget "shorts-controlbackup Extension" */;
-			buildPhases = (
-				784D949E2F09C11C00C0A758 /* Sources */,
-				784D949F2F09C11C00C0A758 /* Frameworks */,
-				784D94A02F09C11C00C0A758 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				784D94A62F09C11C00C0A758 /* shorts-controlbackup Extension */,
-			);
-			name = "shorts-controlbackup Extension";
-			packageProductDependencies = (
-			);
-			productName = "shorts-controlbackup Extension";
-			productReference = 784D94A22F09C11C00C0A758 /* shorts-controlbackup Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -526,12 +404,6 @@
 					784D945A2F09BB5B00C0A758 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
-					784D94882F09C11B00C0A758 = {
-						CreatedOnToolsVersion = 26.1.1;
-					};
-					784D94A12F09C11C00C0A758 = {
-						CreatedOnToolsVersion = 26.1.1;
-					};
 				};
 			};
 			buildConfigurationList = 788DF74A2F09284F00AD55F8 /* Build configuration list for PBXProject "shorts-control" */;
@@ -552,8 +424,6 @@
 				784D94012F09B6F800C0A758 /* macOS (Extension) */,
 				784D94282F09BB5A00C0A758 /* iOS (App) */,
 				784D945A2F09BB5B00C0A758 /* iOS (Extension) */,
-				784D94882F09C11B00C0A758 /* shorts-controlbackup */,
-				784D94A12F09C11C00C0A758 /* shorts-controlbackup Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -570,17 +440,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784DA5BE2F09F29700C0A758 /* content.js in Resources */,
-				784DA5A62F09F21300C0A758 /* _locales in Resources */,
-				784DA5C62F09F2ED00C0A758 /* content.js in Resources */,
-				784DA5A72F09F21300C0A758 /* background.js in Resources */,
-				784DA5A82F09F21300C0A758 /* content.js in Resources */,
+				784DA62F2F0CF51E00C0A758 /* dist in Resources */,
+				784DA6122F0CF49700C0A758 /* _locales in Resources */,
 				784DA5A92F09F21300C0A758 /* images in Resources */,
-				784DA5AA2F09F21300C0A758 /* inject.js in Resources */,
 				784DA5AB2F09F21300C0A758 /* manifest.json in Resources */,
 				784DA5AC2F09F21300C0A758 /* popup.css in Resources */,
 				784DA5AD2F09F21300C0A758 /* popup.html in Resources */,
-				784DA5C12F09F2C200C0A758 /* content.js in Resources */,
 				784DA5AE2F09F21300C0A758 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,36 +461,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784DA5BD2F09F29700C0A758 /* content.js in Resources */,
 				784DA5B02F09F21300C0A758 /* _locales in Resources */,
-				784DA5C52F09F2ED00C0A758 /* content.js in Resources */,
-				784DA5B12F09F21300C0A758 /* background.js in Resources */,
-				784DA5B22F09F21300C0A758 /* content.js in Resources */,
+				784DA6302F0CF54800C0A758 /* dist in Resources */,
 				784DA5B32F09F21300C0A758 /* images in Resources */,
-				784DA5B42F09F21300C0A758 /* inject.js in Resources */,
 				784DA5B52F09F21300C0A758 /* manifest.json in Resources */,
 				784DA5B62F09F21300C0A758 /* popup.css in Resources */,
 				784DA5B72F09F21300C0A758 /* popup.html in Resources */,
-				784DA5C22F09F2C200C0A758 /* content.js in Resources */,
 				784DA5B82F09F21300C0A758 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		784D94872F09C11B00C0A758 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		784D94A02F09C11C00C0A758 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		784DA5F52F0C9CDC00C0A758 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Shared (Extension)/inputFiles.xcfilelist",
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+				"$(SRCROOT)/Shared (Extension)/outputFiles.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "cd \"$PROJECT_DIR/Shared (Extension)/Resources\"\nPATH=${PATH}:/opt/homebrew/bin\necho $PATH\npwd\nwhoami\nnpm run build\n";
+		};
+		784DA6102F0CF1FF00C0A758 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nenv -0 | sort -z | tr '\\0' '\\n'\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		784D93CF2F09B6F700C0A758 /* Sources */ = {
@@ -658,20 +544,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		784D94852F09C11B00C0A758 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		784D949E2F09C11C00C0A758 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -685,17 +557,13 @@
 			target = 784D945A2F09BB5B00C0A758 /* iOS (Extension) */;
 			targetProxy = 784D945D2F09BB5B00C0A758 /* PBXContainerItemProxy */;
 		};
-		784D94BF2F09C16E00C0A758 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 784D94012F09B6F800C0A758 /* macOS (Extension) */;
-			targetProxy = 784D94BE2F09C16E00C0A758 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		784D94162F09B6F800C0A758 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/macOS (Extension).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8DWE63H8E;
@@ -719,6 +587,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -732,6 +601,7 @@
 		784D94172F09B6F800C0A758 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/macOS (Extension).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8DWE63H8E;
@@ -755,6 +625,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -780,6 +651,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
+				EXECUTABLE_EXTENSION = "";
+				EXECUTABLE_SUFFIX = "-debug";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS--App--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
@@ -827,6 +700,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
+				EXECUTABLE_SUFFIX = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS--App--Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
@@ -863,6 +737,7 @@
 		784D94772F09BB5B00C0A758 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "iOS (Extension)/iOS (Extension).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8DWE63H8E;
@@ -897,6 +772,7 @@
 		784D94782F09BB5B00C0A758 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "iOS (Extension)/iOS (Extension).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8DWE63H8E;
@@ -934,6 +810,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS (App)/iOS (App).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8DWE63H8E;
@@ -975,6 +852,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS (App)/iOS (App).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8DWE63H8E;
@@ -1009,168 +887,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		784D94B62F09C11C00C0A758 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y8DWE63H8E;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "shorts-controlbackup Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-controlbackup Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 26.1;
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-controlbackup.Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		784D94B72F09C11C00C0A758 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y8DWE63H8E;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "shorts-controlbackup Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-controlbackup Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@executable_path/../../../../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 26.1;
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-controlbackup.Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		784D94BA2F09C11C00C0A758 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y8DWE63H8E;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = macosx;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		784D94BB2F09C11C00C0A758 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y8DWE63H8E;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "shorts-control";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.5;
-				MARKETING_VERSION = 1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					SafariServices,
-					"-framework",
-					WebKit,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chandelier647.shorts-control";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = macosx;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1330,24 +1046,6 @@
 			buildConfigurations = (
 				784D947C2F09BB5B00C0A758 /* Debug */,
 				784D947D2F09BB5B00C0A758 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		784D94B52F09C11C00C0A758 /* Build configuration list for PBXNativeTarget "shorts-controlbackup Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				784D94B62F09C11C00C0A758 /* Debug */,
-				784D94B72F09C11C00C0A758 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		784D94B92F09C11C00C0A758 /* Build configuration list for PBXNativeTarget "shorts-controlbackup" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				784D94BA2F09C11C00C0A758 /* Debug */,
-				784D94BB2F09C11C00C0A758 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
