@@ -78,6 +78,10 @@
         margin: 6px 0;
       }
 
+      label.hidden {
+        display: none;
+      }
+
       .hint {
         font-size: 10px;
         color: #777;
@@ -248,8 +252,16 @@
     <div class="section instagram">
       <div class="section-title">Instagram</div>
       <label>
-        <span>Add progress bar</span>
+        <span>Enable controls</span>
         <input type="checkbox" id="instagram-toggle" />
+      </label>
+      <label>
+        <span>Autoplay videos</span>
+        <input type="checkbox" id="instagram-autoplay" />
+      </label>
+      <label id="instagram-keep-playing-row" class="hidden">
+        <span>Keep playing after scroll</span>
+        <input type="checkbox" id="instagram-keep-playing" />
       </label>
       <a href="#" class="notes-link modal-link" data-platform="instagram"
         >platform notes</a

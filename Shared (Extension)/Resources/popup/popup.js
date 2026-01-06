@@ -6,15 +6,41 @@ document.addEventListener("DOMContentLoaded", () => {
     "youtube-hide-description",
     "youtube-hide-track",
     "youtube-hide-search-button",
+    "instagram-autoplay",
+    "instagram-keep-playing",
     "facebook-autounmute",
   ];
 
   const allKeys = [...platforms, ...additionalOptions];
 
+  const optionDefaults = {
+    "youtube-hide-channel": false,
+    "youtube-hide-title": false,
+    "youtube-hide-description": true,
+    "youtube-hide-track": true,
+    "youtube-hide-search-button": true,
+    "instagram-autoplay": false,
+    "instagram-keep-playing": false,
+    "facebook-autounmute": false,
+  };
+
+  // Update visibility of conditional options
+  const updateConditionalVisibility = () => {
+    const autoplayCheckbox = document.getElementById("instagram-autoplay");
+    const keepPlayingRow = document.getElementById("instagram-keep-playing-row");
+    
+    if (autoplayCheckbox && keepPlayingRow) {
+      // Show "keep playing" only when autoplay is OFF
+      keepPlayingRow.classList.toggle("hidden", autoplayCheckbox.checked);
+    }
+  };
+
   chrome.storage.sync.get(allKeys, (settings) => {
     // Main platform toggles
     platforms.forEach((platform) => {
       const toggle = document.getElementById(`${platform}-toggle`);
+      if (!toggle) return;
+      
       const isEnabled = settings[platform] !== false; // default: true
       toggle.checked = isEnabled;
 
@@ -23,32 +49,45 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    const optionDefaults = {
-      "youtube-hide-channel": false,
-      "youtube-hide-title": false,
-      "youtube-hide-description": true,
-      "youtube-hide-track": true,
-      "youtube-hide-search-button": true,
-      'facebook-autounmute': false,
-    };
-
+    // Additional options
     additionalOptions.forEach((key) => {
       const checkbox = document.getElementById(key);
+      if (!checkbox) return;
+      
       const isChecked =
         settings[key] !== undefined ? settings[key] : optionDefaults[key];
       checkbox.checked = isChecked;
 
       checkbox.addEventListener("change", () => {
         chrome.storage.sync.set({ [key]: checkbox.checked });
+        updateConditionalVisibility();
       });
     });
+
+    // Initial visibility update
+    updateConditionalVisibility();
+  });
+
+  // Listen for storage changes (in case settings change elsewhere)
+  chrome.storage.onChanged.addListener((changes, area) => {
+    if (area !== "sync") return;
+    
+    if (changes["instagram-autoplay"]) {
+      const checkbox = document.getElementById("instagram-autoplay");
+      if (checkbox) {
+        checkbox.checked = changes["instagram-autoplay"].newValue;
+        updateConditionalVisibility();
+      }
+    }
   });
 });
 
 const notes = {
   instagram: `
     <strong>Instagram</strong><br/><br/>
-    - Instagram has a pretty clean video interface, so we only add the native video controls.
+    - Adds native video controls with progress bar and volume slider.<br/><br/>
+    - <strong>Autoplay:</strong> When off, videos won't auto-play as you scroll.<br/><br/>
+    - <strong>Keep playing after scroll:</strong> When enabled, a video you've started will keep playing even when you scroll away. It only stops when you play a different video.
   `,
   youtube: `
     <strong>YouTube Shorts</strong><br/><br/>
@@ -71,8 +110,6 @@ const notes = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Existing setup (platforms array, toggles, etc)...
-
   // Modal setup
   const modal = document.getElementById("notes-modal");
   const modalBody = document.getElementById("modal-body");
