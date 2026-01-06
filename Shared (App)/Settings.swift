@@ -24,6 +24,7 @@ struct Settings {
         case youtubeHideSearchButton = "youtube-hide-search-button"
         case instagram
         case instagramAutoplay = "instagram-autoplay"
+        case instagramKeepPlaying = "instagram-keep-playing"
         case facebook
         case facebookAutounmute = "facebook-autounmute"
     }
@@ -46,7 +47,8 @@ struct Settings {
         var result: [String: Bool] = [:]
         for key in [Key.youtube, .youtubeHideChannel, .youtubeHideTitle,
                     .youtubeHideDescription, .youtubeHideTrack, .youtubeHideSearchButton,
-                    .instagram, .instagramAutoplay, .facebook, .facebookAutounmute] {
+                    .instagram, .instagramAutoplay, .instagramKeepPlaying,
+                    .facebook, .facebookAutounmute] {
             result[key.rawValue] = bool(for: key)
         }
         return result

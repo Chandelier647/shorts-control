@@ -9,9 +9,14 @@ import { Native, log, DEBUG } from '../../shared/index.js';
 import { isInViewport, createUIObserver } from '../../shared/index.js';
 import { storage, createSettings } from '../../shared/index.js';
 
-const settings = createSettings(['instagram', 'instagram-autoplay'], {
+const settings = createSettings([
+    'instagram',
+    'instagram-autoplay',
+    'instagram-keep-playing'
+], {
     'instagram': true,
-    'instagram-autoplay': false
+    'instagram-autoplay': false,
+    'instagram-keep-playing': false
 });
 
 // Initialize
@@ -22,8 +27,11 @@ const setupVideoHandling = () => {
     let currentVolume = 1.0;
     let isMuted = false;
     let saveTimeout;
+    
+    // Track which video the user explicitly started playing
+    let userPlayedVideo = null;
 
-    // Load saved volume on startup
+    // Load saved state on startup
     storage.local.get(['reelVolume', 'reelMuted']).then((result) => {
         if (result.reelVolume !== undefined) {
             currentVolume = result.reelVolume;
@@ -64,8 +72,8 @@ const setupVideoHandling = () => {
 
         for (let i = start; i < end; i++) {
             if (i !== sourceIndex) {
-                applyVolumeState(allVideos[i])
-                log('[ReelsFix] Updated nearby video volume:', i);
+                applyVolumeState(allVideos[i]);
+                log('Updated nearby video volume:', i);
             }
         }
     }
@@ -78,20 +86,12 @@ const setupVideoHandling = () => {
 
         video.controls = true;
 
-        // Set immediately
+        // Apply volume state
         applyVolumeState(video);
-
-
-
-
-
-
-        // Set again after Instagram's initialization likely completes
         setTimeout(() => applyVolumeState(video), 0);
         setTimeout(() => applyVolumeState(video), 100);
 
-
-
+        // Handle volume changes
         video.addEventListener('volumechange', () => {
             if (!document.contains(video)) return;
             const newVolume = video.volume;
@@ -127,12 +127,59 @@ const setupVideoHandling = () => {
             }
         });
 
+        // Handle user-initiated play
+        video.addEventListener('play', () => {
+            const s = settings.get();
+            
+            // If user clicked play on a different video
+            if (userPlayedVideo && userPlayedVideo !== video && document.contains(userPlayedVideo)) {
+                log('User played new video, pausing previous');
+                userPlayedVideo.pause();
+            }
+            
+            // Track this as the user's active video
+            userPlayedVideo = video;
+            log('User played video:', video);
+        });
+
+        // Handle autoplay setting
         if (s['instagram-autoplay'] && isInViewport(video)) {
-            video.play().catch(() => { }); // Catch autoplay rejection
+            video.play().catch(() => {});
         }
+    };
 
+    // Handle "keep playing" behavior when scrolling
+    const handleScrollBehavior = () => {
+        const s = settings.get();
+        
+        // If autoplay is enabled, normal Instagram behavior is fine
+        if (s['instagram-autoplay']) return;
+        
+        // If keep-playing is disabled, pause videos that scroll out of view
+        // (unless they're the user's explicitly played video)
+        if (!s['instagram-keep-playing']) {
+            document.querySelectorAll('video').forEach(video => {
+                if (!isInViewport(video) && !video.paused) {
+                    if (video !== userPlayedVideo) {
+                        video.pause();
+                    }
+                }
+            });
+        }
+        
+        // If keep-playing IS enabled, only the userPlayedVideo should keep playing
+        // Other videos that come into view should NOT autoplay
+    };
 
-    }
+    // Debounced scroll handler
+    let scrollTimeout;
+    const handleScroll = () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(handleScrollBehavior, 100);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
     document.querySelectorAll('video').forEach(setupVideo);
 
     const observer = new MutationObserver((mutations) => {
@@ -144,95 +191,50 @@ const setupVideoHandling = () => {
         }
     });
     observer.observe(document.body, { childList: true, subtree: true });
-}
+};
+
 const modifyInstagramUI = () => {
-    //chrome.storage.sync.get("instagram", ({ instagram }) => {
-    //console.log("overallVolume", overallVolume);
-    //const enabled = instagram !== false;
-
     const s = settings.get();
-
     const enabled = s['instagram'];
 
-    log("enabled: " + enabled);
+    log('enabled:', enabled);
 
     if (!enabled) return;
+    if (!window.location.hostname.includes('instagram.com')) return;
 
-    if (!window.location.hostname.includes("instagram.com")) return;
-
-
-
+    // Hide play buttons
     document.querySelectorAll('[aria-label="Play"]').forEach((element) => {
         if (element.parentElement?.parentElement) {
-            element.parentElement.parentElement.style.display = enabled
-                ? "none"
-                : "";
+            element.parentElement.parentElement.style.display = 'none';
         }
     });
 
+    // Hide presentation overlays
+    document.querySelectorAll('div [role="presentation"]').forEach((element) => {
+        if (element.nextElementSibling?.tagName === 'DIV') {
+            element.parentElement.style.display = 'none';
+        }
+    });
 
-
-    document
-        .querySelectorAll('div [role="presentation"]')
-        .forEach((element) => {
-            // if it's a vid the next tag tends to be a div, otherwise button
-            if (element.nextElementSibling?.tagName === "DIV") {
-                element.parentElement.style.display = enabled ? "none" : "";
-            }
-        });
-
-
-    if (window.__reelsFixInjected) {
-        console.log('[ReelsFix] Already injected, skipping');
-    } else {
+    // Inject mute-prevention script (only once)
+    if (!window.__reelsFixInjected) {
         window.__reelsFixInjected = true;
-        console.log('[ReelsFix] Content script running, attempting injection');
+        log('Content script running, attempting injection');
 
-        // Inject the mute-blocking script
         const script = document.createElement('script');
         script.src = chrome.runtime.getURL('dist/instagram-inject.js');
+        script.dataset.debug = DEBUG;
         script.addEventListener('load', () => {
-            console.log('[ReelsFix] inject.js loaded successfully');
+            log('inject.js loaded successfully');
             script.remove();
         }, { once: true });
-        script.dataset.debug = DEBUG; // Pass debug state
         document.documentElement.appendChild(script);
 
         setupVideoHandling();
-
-
-        /*document.querySelectorAll("video").forEach((video) => {
-         if (enabled) {
-         video.onvolumechange = () => {
-         overallVolume = video.volume;
-         // this breaks the mute shortcut control but this is good
-         // because platforms hijack this.
-         // The user can still drag the volume slider to 0
-         video.muted = false;
-         };
-         video.muted = overallVolume === 0;
-         video.volume = overallVolume;
-         video.loop = true;
-         video.controls = tr ue;
-         video.controlsList = "nofullscreen";
-         video.onclick = () => (video.paused ? video.play() : video.pause());
-         } else {
-         video.controls = false;
-         video.onmouseup = null;
-         video.onseeked = null;
-         video.onended = null;
-         video.onclick = null;
-         }
-         });
-         });*/
-    };
-
-
-
+    }
 };
 
 const init = async () => {
-
     const { startObserving } = createUIObserver(modifyInstagramUI);
 
     await settings.load();
@@ -242,12 +244,12 @@ const init = async () => {
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => {
             modifyInstagramUI();
-
         });
     } else {
-        modifyInstagramUI(); a
-
+        modifyInstagramUI();
     }
+    
     startObserving();
-}
+};
+
 init();

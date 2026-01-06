@@ -24,11 +24,11 @@ struct SettingsView: View {
     @AppStorage("instagram", store: UserDefaults(suiteName: Settings.suiteName))
     private var instagramEnabled = true
     
-    @AppStorage("instagram-autounmute", store: UserDefaults(suiteName: Settings.suiteName))
-    private var instagramAutounmute = false
-    
     @AppStorage("instagram-autoplay", store: UserDefaults(suiteName: Settings.suiteName))
     private var instagramAutoplay = false
+    
+    @AppStorage("instagram-keep-playing", store: UserDefaults(suiteName: Settings.suiteName))
+    private var instagramKeepPlaying = false
     
     // MARK: - Facebook Settings
     @AppStorage("facebook", store: UserDefaults(suiteName: Settings.suiteName))
@@ -57,7 +57,12 @@ struct SettingsView: View {
                 Toggle("Enable controls", isOn: $instagramEnabled)
                 
                 if instagramEnabled {
-                    Toggle("Autoplay on load", isOn: $instagramAutoplay)
+                    Toggle("Autoplay videos", isOn: $instagramAutoplay)
+                    
+                    if !instagramAutoplay {
+                        Toggle("Keep playing after scroll", isOn: $instagramKeepPlaying)
+                            .help("Video continues playing when you scroll away. Only stops when you play a different video.")
+                    }
                 }
             } header: {
                 Text("Instagram Reels")
@@ -73,9 +78,9 @@ struct SettingsView: View {
                 Text("Facebook Reels")
             }
         }
-#if os(macOS)
-.frame(minWidth: 400, minHeight: 300)
-#endif
+        #if os(macOS)
+        .frame(minWidth: 400, minHeight: 300)
+        #endif
     }
 }
 
